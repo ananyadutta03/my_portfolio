@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananya's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="text">
+                    <h2>ANANYA...</h2>
+                </div>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hello, This is<br><span>Ananya Dutta</span>, I'm a <br>Student of Computer <br>Science and Engineering</h1>
+            </div>
+        </div>
+        <div id="particles-js"></div>
+    </div>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2">
+                    <h2 class="sub-title">ABOUT ME</h2><br>
+                    <p>Currently, I am a 3rd-year B.Sc. in Computer Science and Engineering (CSE) student at American International University-Bangladesh (AIUB). I am passionate about programming and software development, with a strong interest in machine learning and artificial intelligence. I have successfully engaged in programming, machine learning, and software engineering through impactful academic projects and an Accepted conference paper. As a skilled software developer or computational researcher, I am prepared to leverage my strong technical foundation to innovate and address real-world challenges.</p>
+                </div>
+                <div class="about-col-1">
+                    <img src="image/AnanyaImage.png" alt="Ananya Dutta's portrait" style="width:100%;height:auto;border-radius:15px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skills -->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1><br><br>
+            <div class="skills-slider">
+                <div class="skills-track">
+                    <div class="skill-box" data-category="programming">
+                        <h3>Programming Languages</h3>
+                        <p>C, C++, Python, Java, JavaScript, HTML, CSS</p>
+                    </div>
+                    <div class="skill-box" data-category="webdev">
+                        <h3>Web Development</h3>
+                        <p>React.js, Node.js, Express.js</p>
+                    </div>
+                    <div class="skill-box" data-category="database">
+                        <h3>Database Management</h3>
+                        <p>MySQL</p>
+                    </div>
+                    <div class="skill-box" data-category="ml">
+                        <h3>Machine Learning</h3>
+                        <p>Scikit-learn, TensorFlow</p>
+                    </div>
+                    <div class="skill-box" data-category="software">
+                        <h3>Software Development</h3>
+                        <p>Git, GitHub</p>
+                    </div>
+                    <div class="skill-box" data-category="os">
+                        <h3>Operating Systems</h3>
+                        <p>Windows, Linux</p>
+                    </div>
+                    <div class="skill-box" data-category="others">
+                        <h3>Others</h3>
+                        <p>Microsoft Office Suite</p>
+                    </div>
+                    <!-- Duplicate for seamless looping -->
+                    <div class="skill-box" data-category="programming">
+                        <h3>Programming Languages</h3>
+                        <p>C, C++, Python, Java, JavaScript, HTML, CSS</p>
+                    </div>
+                    <div class="skill-box" data-category="webdev">
+                        <h3>Web Development</h3>
+                        <p>React.js, Node.js, Express.js</p>
+                    </div>
+                    <div class="skill-box" data-category="database">
+                        <h3>Database Management</h3>
+                        <p>MySQL</p>
+                    </div>
+                    <div class="skill-box" data-category="ml">
+                        <h3>Machine Learning</h3>
+                        <p>Scikit-learn, TensorFlow</p>
+                    </div>
+                    <div class="skill-box" data-category="software">
+                        <h3>Software Development</h3>
+                        <p>Git, GitHub</p>
+                    </div>
+                    <div class="skill-box" data-category="os">
+                        <h3>Operating Systems</h3>
+                        <p>Windows, Linux</p>
+                    </div>
+                    <div class="skill-box" data-category="others">
+                        <h3>Others</h3>
+                        <p>Microsoft Office Suite</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Skills Modal -->
+            <div class="skills-modal" id="skillsModal">
+                <div class="modal-content">
+                    <span class="close-btn" id="closeModal">×</span>
+                    <h2 id="modalTitle"></h2>
+                    <div id="modalSkills"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Education -->
+    <div id="education">
+        <div class="container">
+            <h1 class="sub-title">Education</h1>
+            <h2 class="edu-title">My Education</h2>
+            <p class="edu-subtitle">Here is a quick summary of my educational background</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2019</div>
+                    <div class="timeline-content">
+                        <p><strong>Secondary School Certificate (SSC)</strong><br>Kapasgola City Corporation Girls High School<br>Chittagong, Bangladesh<br>GPA: 5.00/5.00</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2021</div>
+                    <div class="timeline-content">
+                        <p><strong>Higher Secondary School Certificate (HSC)</strong><br>Kapasgola City Corporation Mohila College<br>Chittagong, Bangladesh<br>GPA: 5.00/5.00</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2022-Present</div>
+                    <div class="timeline-content">
+                        <p><strong>Bachelor of Science (BSc)</strong><br>American International University-Bangladesh<br>Dhaka, Bangladesh<br>Department: Computer Science & Engineering<br>CGPA: 3.70/4.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <p class="project-subtitle">Showcasing some of my recent projects and technical achievements.</p>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Online Food Hub Portal</h3>
+                    <p>Built a C# desktop User-friendly application enabling online food ordering with secure payments, menu management, and user authentication.</p>
+                    <div class="tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">.NET Framework</span>
+                        <span class="tag">Microsoft SQL Server</span>
+                    </div>
+                    <a href="https://github.com/ananyadutta03/Online_Food_Hub_Portal" class="btn code-btn" target="_blank">Code</a>
+                </div>
+                <div class="project-card">
+                    <h3>Plant Aid</h3>
+                    <p>Developed "Plant Aid," a software using Agile with Scrum to diagnose plant health, detect diseases, and provide care instructions, contributing to project proposal, UI design, testing, and features like plant scanning, weather data integration, and community forums.</p>
+                    <div class="tags">
+                        <span class="tag">Agile Methodology</span>
+                    </div>
+                    <a href="#" class="btn code-btn" target="_blank">Code</a>
+                </div>
+                <div class="project-card">
+                    <h3>Stress Detection and Relief Recommendations</h3>
+                    <p>Trained ML models to predict stress using wearable data from 374 participants, achieving 96% accuracy with a stacked ensemble (Random Forest, XGBoost, Logistic Regression, SVM), and built a meta-model for personalized stress relief and suicide action plans for high-risk cases.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">XG Boost</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                    </div>
+                    <a href="https://github.com/ananyadutta03/Machine-Learning" class="btn code-btn" target="_blank">Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> ananyadutta676@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 01626371677</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ananyadutta66/"><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/_ananya__dutta_/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/_ananya__dutta_/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; Copyright <span class="year">2025</span> Ananya Dutta. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        // Particles.js initialization
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: '#16f2b3' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5, random: false },
+                size: { value: 3, random: true },
+                line_linked: { enable: true, distance: 150, color: '#16f2b3', opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 6, direction: 'none', random: false, straight: false, out_mode: 'out', bounce: false }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true },
+                modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
+            },
+            retina_detect: true
+        });
+
+        // Skills slider and modal functionality
+        const skillsData = {
+            programming: [
+                { name: 'HTML', proficiency: 90, class: 'html' },
+                { name: 'CSS', proficiency: 85, class: 'css' },
+                { name: 'JavaScript', proficiency: 80, class: 'js' },
+                { name: 'Python', proficiency: 90, class: 'python' },
+                { name: 'Java', proficiency: 75, class: 'java' },
+                { name: 'C++', proficiency: 70, class: 'cpp' },
+                { name: 'C', proficiency: 65, class: 'c' }
+            ],
+            webdev: [
+                { name: 'React.js', proficiency: 80, class: 'react' },
+                { name: 'Node.js', proficiency: 75, class: 'node' },
+                { name: 'Express.js', proficiency: 70, class: 'express' }
+            ],
+            database: [
+                { name: 'MySQL', proficiency: 85, class: 'mysql' }
+            ],
+            ml: [
+                { name: 'Scikit-learn', proficiency: 80, class: 'sklearn' },
+                { name: 'TensorFlow', proficiency: 75, class: 'tensorflow' }
+            ],
+            software: [
+                { name: 'Git', proficiency: 90, class: 'git' },
+                { name: 'GitHub', proficiency: 90, class: 'github' }
+            ],
+            os: [
+                { name: 'Windows', proficiency: 95, class: 'windows' },
+                { name: 'Linux', proficiency: 80, class: 'linux' }
+            ],
+            others: [
+                { name: 'Microsoft Office', proficiency: 90, class: 'office' }
+            ]
+        };
+
+        document.querySelectorAll('.skill-box').forEach(box => {
+            box.addEventListener('click', () => {
+                const category = box.getAttribute('data-category');
+                const skills = skillsData[category];
+                const modal = document.getElementById('skillsModal');
+                const modalTitle = document.getElementById('modalTitle');
+                const modalSkills = document.getElementById('modalSkills');
+                const skillsTrack = document.querySelector('.skills-track');
+
+                modalTitle.textContent = box.querySelector('h3').textContent;
+                modalSkills.innerHTML = skills.map(skill => `
+                    <div>
+                        <p>${skill.name}: ${skill.proficiency}%</p>
+                        <div class="progress-bar">
+                            <div class="progress ${skill.class}" style="width: 0%"></div>
+                        </div>
+                    </div>
+                `).join('');
+
+                modal.style.display = 'flex';
+                skillsTrack.classList.add('paused');
+
+                setTimeout(() => {
+                    modalSkills.querySelectorAll('.progress').forEach(bar => {
+                        const skill = skills.find(s => bar.classList.contains(s.class));
+                        bar.style.width = `${skill.proficiency}%`;
+                    });
+                }, 100);
+            });
+        });
+
+        document.getElementById('closeModal').addEventListener('click', () => {
+            const modal = document.getElementById('skillsModal');
+            const skillsTrack = document.querySelector('.skills-track');
+            modal.style.display = 'none';
+            skillsTrack.classList.remove('paused');
+        });
+
+        window.addEventListener('click', (e) => {
+            const modal = document.getElementById('skillsModal');
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                document.querySelector('.skills-track').classList.remove('paused');
+            }
+        });
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzthxxozIirKtCPvUawBRzLB9_4G7QIEj3rIinBep63b_Sio07OuIOxgI98bTpUNtm0/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
