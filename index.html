@@ -16,6 +16,9 @@
                 <div class="text">
                     <h2>ANANYA...</h2>
                 </div>
+                <div class="menu-toggle" id="menuToggle">
+                  <i class="fas fa-bars"></i>
+                </div>
                 <ul>
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -217,23 +220,23 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-year">2019</div>
+                    <!-- <div class="timeline-year">2019</div> -->
                     <div class="timeline-content">
-                        <p><strong>Secondary School Certificate (SSC)</strong><br>Kapasgola City Corporation Girls High School<br>Chittagong, Bangladesh<br>GPA: 4.89/5.00</p>
+                        <p><strong>Secondary School Certificate (SSC) <br>2019</strong><br>Kapasgola City Corporation Girls High School<br>Chittagong, Bangladesh<br>GPA: 4.89/5.00</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-year">2021</div>
+                    <!-- <div class="timeline-year">2021</div> -->
                     <div class="timeline-content">
-                        <p><strong>Higher Secondary School Certificate (HSC)</strong><br>Kapasgola City Corporation Mohila College<br>Chittagong, Bangladesh<br>GPA: 5.00/5.00</p>
+                        <p><strong>Higher Secondary School Certificate (HSC) <br>2021</strong><br>Kapasgola City Corporation Mohila College<br>Chittagong, Bangladesh<br>GPA: 5.00/5.00</p>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-year">2022-Present</div>
+                    <!-- <div class="timeline-year">2022-Present</div> -->
                     <div class="timeline-content">
-                        <p><strong>Bachelor of Science (BSc)</strong><br>American International University-Bangladesh<br>Dhaka, Bangladesh<br>Department: Computer Science & Engineering<br>CGPA: 3.60/4.00 (Ongoing)</p>
+                        <p><strong>Bachelor of Science (BSc) <br> 2022-Present</strong><br>American International University-Bangladesh<br>Dhaka, Bangladesh<br>Department: Computer Science & Engineering<br>CGPA: 3.60/4.00 (Ongoing)</p>
                     </div>
                 </div>
             </div>
@@ -459,5 +462,25 @@
             .catch(error => console.error('Error!', error.message))
         })
     </script>
+    <script>
+      const menuToggle = document.getElementById('menuToggle');
+      const navMenu = document.querySelector('nav ul');
+      const navLinks = document.querySelectorAll('nav ul li a');
+
+      // Toggle menu open/close
+      menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+      });
+
+      // Close menu after clicking any link (mobile)
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('active');
+        });
+      });
+    </script>
+
+
 </body>
+
 </html>

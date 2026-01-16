@@ -816,3 +816,52 @@ nav ul li a:hover::after {
         margin-top: 30px;
     }
 }
+
+
+/* =====================================================
+   MOBILE DROPDOWN NAV — MOBILE ONLY
+   ===================================================== */
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+
+  /* show hamburger only on mobile */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* dropdown menu */
+  nav ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(14, 20, 24, 0.65);
+    backdrop-filter: blur(8px);
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    z-index: 999;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 16px 0;
+    font-size: 1rem;
+  }
+}
